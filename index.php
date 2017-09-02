@@ -51,7 +51,7 @@
 
 </div>
 
-   
+
 
     <!-- SOCIAL LINKS -->
     <div class="social-link">
@@ -78,7 +78,7 @@
                         while (have_posts()): the_post(); ?>
 
 
-                        <?php 
+                        <?php
                         $custom_fields = get_post_custom(get_the_ID());
 
                         $fecha = $custom_fields['fecha'][0];
@@ -92,14 +92,14 @@
                         global $post;
                         $thumbID = get_post_thumbnail_id(get_the_ID());
                         $imgDestacada = wp_get_attachment_url( $thumbID );
-                        
+
 
                          ?>
                     <!-- Slider -->
-                   
+
                     <div class="ms-slide">
-                       
-                        <?php 
+
+                        <?php
                             switch ($tipoEvento) {
                                 case 'box':
                                     ?>
@@ -117,7 +117,7 @@
                                 case 'copa-del-rey':
                                 ?>
                                     <img src="../masterslider/style/blank.gif" data-src="<?php echo get_template_directory_uri(); ?>/images/src/sliders/copa-del-rey.png" alt="Champions en la taberna"/>
-                                    
+
                                     <?php break;
                                 case 'futbol':
                                     ?>
@@ -138,23 +138,23 @@
                                     <img src="../masterslider/style/blank.gif" data-src="<?php echo get_template_directory_uri(); ?>/images/src/sliders/ufc.png" alt="Champions en la taberna"/>
                                    <?php   break;
 
-                                
+
                                 default:
                                     ?>
                                     <img src="../masterslider/style/blank.gif" data-src="<?php echo get_template_directory_uri(); ?>/images/src/sliders/futbol.png" alt="Champions en la taberna"/>
                                     <?php  break;
                             }
-                         ?>  
-                        
+                         ?>
+
                         <div class="ms-thumb">
                             <h3><?php the_title(); ?></h3>
                             <p><?php echo $fecha; ?> | <?php echo $hora; ?></p>
                         </div>
 
-                        
+
 
                         <img class="ms-layer" alt="lorem ipsum dolor sit"
-                             
+
                              data-type          = "image"
                              data-effect        = "right(90)"
                              data-duration      = "200"
@@ -162,7 +162,7 @@
                              style              = "top: 120px; left: 150px;"
 
 
-                          
+
                              src="<?php echo get_template_directory_uri(); ?>/masterslider/blank.gif"
                              data-src="<?php echo $imgDestacada; ?>"
                         />
@@ -184,7 +184,7 @@
                 </div>
                 <!-- end of masterslider -->
     </div>
-    
+
     <script>
         var diasInhabiles = <?php  echo json_encode($fechasInhabiles); ?>
     </script>
@@ -205,10 +205,10 @@
                         <span data-aos="fade-up" data-aos-delay="600" class="text-2">diferente</span>
                     </div>
                 </div>
-                
-                <?php 
+
+                <?php
                     $dia = date("l");
-                
+
                  ?>
                 <div class="col-md-7">
                     <div class="carousel-promo owl-carousel">
@@ -224,14 +224,14 @@
                         <div class="item-promo item <?php if($dia == 'Thursday'){ ?> active dia-select <?php  }?>">
                             <a href="#" data-toggle="modal" data-target="#jueves"><img  src="<?php echo get_template_directory_uri(); ?>/images/src/jueves-c.png" alt="Martes promocion la taberna"></a>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
-    <!-- MODALS DEL DIA --> 
+
+    <!-- MODALS DEL DIA -->
 
     <div class="modal modal-dia fade" id="domingo">
         <div class="modal-dialog modal-lg">
@@ -288,7 +288,7 @@
         </div>
     </div>
 
-    <!-- MODALS DEL DIA --> 
+    <!-- MODALS DEL DIA -->
 
 
 
@@ -300,9 +300,9 @@
         <img data-aos="zoom-in-right" src="<?php echo get_template_directory_uri(); ?>/images/src/bat.png" class="decoration bat" alt="beisbol la taberna">
         <div class="container">
             <div class="row">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/src/chica.png" class="chica" alt="Chica La taberna ">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/src/tabertubo.png" class="chica" alt="Chica La taberna ">
                 <div class="col-md-6">
-                    
+
                 </div>
                 <div class="col-md-6">
                     <div class="clear-30"></div>
@@ -312,9 +312,9 @@
                     <div class="video">
                         <iframe width="546" height="305" src="https://www.youtube.com/embed/OCqSTRKGIPc" frameborder="0" allowfullscreen></iframe>
                     </div>
-                    
+
                     <div class="text-16">
-                        Si de ver deporte en vivo se trata, la 
+                        Si de ver deporte en vivo se trata, la
                         taberna es el mejor lugar para disfrutar en  grupo, una variedad de eventos deportivos
                         relevantes.
                     </div>
@@ -336,7 +336,7 @@
                                 <img src="<?php echo get_template_directory_uri(); ?>/images/src/6TB.png" width="75" alt="La taberna Transmision 6">
                             </div>
                         </div>
-                        
+
                         <div class="row">
                             <div class="col-md-2 col-md-offset-1">
                                 <img src="<?php echo get_template_directory_uri(); ?>/images/src/5TB.png" width="52" alt="La taberna Transmision 5">
@@ -350,12 +350,12 @@
                             <div class="col-md-2">
                                 <img src="<?php echo get_template_directory_uri(); ?>/images/src/2TB.png" width="91" alt="La taberna Transmision 2">
                             </div>
-                            <div class="col-md-2">  
+                            <div class="col-md-2">
                             <img src="<?php echo get_template_directory_uri(); ?>/images/src/1TB.png" width="70" alt="La taberna Transmision 1">
                             </div>
-                        </div>                      
+                        </div>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
@@ -390,7 +390,7 @@
 
                             <p>2016, cumplimos nuestra mayoría de edad ya son 18 años en la preferencia de nuestros clientes, esto nos impulsa a ver mas allá. Siguiendo nuestra visión iniciamos el proyecto de franquicias en busca de nuestro crecimiento y expansión en el mercado restaurantero.</p>
 
-                        </div>                  
+                        </div>
                     </div>
                 </div>
             </div>
@@ -463,7 +463,7 @@
                         <p>Arrachera, cerdo, pollo y chorizo en una sabrosa salsa de cuatro chiles con nopal asado y cebollas cambray, guarnición de frijoles y guacamole, estupendo para compartir.</p>
                     </div>
 
-                    <div class="platillo">  
+                    <div class="platillo">
                         <div class="title-platillo">ENCHILADAS SUIZAS</div>
                         <p>Las tadicionales de México por que en Suiza  ¡no hay enchiladas!</p>
                     </div>
@@ -494,7 +494,7 @@
                         <span class="barra"></span>
                         <span class="texto-barra">Tamarindo</span>
                     </div>
-                    
+
                     <div class="picante picante-nivel3">
                         <span class="barra"></span>
                         <span class="texto-barra">Chipotle</span>
@@ -522,7 +522,7 @@
         </div>
     </div>
     <div class="clear-20">
-        
+
     </div>
 </div>
     <!-- Menu -->
@@ -551,7 +551,7 @@
                             <?php the_excerpt(); ?>
                         </div>
                         <div class="social-links-post">
-                        
+
                             <a href="javascript:void(0)" onclick="window.open ('https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>', 'Facebook', 'toolbar=0, status=0, width=550, height=350');" ><i class="fa fa-facebook" aria-hidden="true"></i></a>
 
                             <!-- Twitter -->
@@ -563,8 +563,8 @@
                         </div>
                     </div>
                 </div>
-            
-        <?php $no_post++; if($no_post == 3){break;} endwhile; wp_reset_query(); ?>                
+
+        <?php $no_post++; if($no_post == 3){break;} endwhile; wp_reset_query(); ?>
             </div>
         </div>
     </div>
@@ -638,7 +638,7 @@
 
 
     <div class="mapa-contenedor" id="sucursales">
-        
+
         <img src="<?php echo get_template_directory_uri(); ?>/images/src/placa.png" alt="placa la taberna" class="decoration placa">
         <div class="direcciones">
             <div class="clear-60"></div>
@@ -646,7 +646,7 @@
                 <div class="sucursal color-azul">
                     <span class="font-19 ">Sucursal Yaxchilán</span> <br>
                     <span class="font-15">Av. Yaxchilán #23 SM. 24 Col. Centro</span> <br>
-                    <span class="font-19">Tel: (998) 887-5433</span> 
+                    <span class="font-19">Tel: (998) 887-5433</span>
                 </div>
                 <div class="clear-30"></div>
                 <div class="sucursal color-azul">
@@ -672,7 +672,7 @@
             </div>
         </div>
         <div class="mapa" id="map" style="height: 630px"></div>
-        
+
         <div class="footer">
             <footer>
                 <img src="<?php echo get_template_directory_uri(); ?>/images/src/footer.png" alt="footer la taberna">
@@ -695,10 +695,10 @@
 
 
 
-    <!-- JS --> 
+    <!-- JS -->
 
-    
-    
+
+
 
 
 <?php get_footer(); ?>

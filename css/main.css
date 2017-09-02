@@ -554,9 +554,10 @@ body.sidenav-open .overlay-sidenav {
 }
 .historia .chica {
   position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 46%;
+  left: 200px;
+  bottom: -42px;
+  width: 24%;
+  height: 117%;
 }
 @media only screen and (max-width: 768px) {
   .historia .chica {
@@ -565,7 +566,7 @@ body.sidenav-open .overlay-sidenav {
 }
 @media only screen and (min-width: 1400px) {
   .historia .chica {
-    width: 40%;
+    width: 28%;
   }
 }
 .decoration {
