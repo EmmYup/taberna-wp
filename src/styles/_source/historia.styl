@@ -1,0 +1,160 @@
+.historia
+	background-image: url("../../images/src/fondo.png")
+	background-repeat: no-repeat
+	background-size: cover
+	padding 30px 0
+	position: relative
+	.link-historia
+		a
+			background-color: $amarillo
+			color #fff
+			font-size 37px
+			font-weight 700
+			line-height 31px
+			padding 10px 60px
+			width 500px
+			margin 0 auto
+			display: block
+			border-radius 10px
+			margin-top 10px
+			text-decoration: none !important
+			outline none !important
+			&:hover
+				text-decoration: none
+				cursor: pointer
+	.video
+		position relative
+		&:before
+			position absolute
+			top -3px
+			left -5px
+			right 0
+			bottom 0
+			width: 100%
+			height 100%
+			display block
+			content ""
+			background-color $amarillo
+			transform rotate(-1deg)
+			z-index: 10
+		iframe
+			position relative
+			z-index: 11
+			+for_breakpoint(mobile)
+				width: 100%
+				height auto
+	.text-62
+		font-size 54px
+		text-transform: uppercase
+		color $amarillo
+		line-height: 54px
+		strong
+			font-weight 700
+			letter-spacing: 10px
+	.text-32
+		font-size 32px
+		text-transform: uppercase
+		color $amarillo
+		+for_breakpoint(mobile)
+			text-align: center
+		strong
+			font-weight 700
+	.text-16
+		font-size 16px
+		font-weight 400
+		color $amarillo
+		text-align justify
+		margin 0
+	.transmisiones
+		img
+			width: 100%
+			filter: brightness(1.1);
+	.chica
+		position absolute
+		left 0
+		bottom 0
+		width: 46%
+		+for_breakpoint(mobile)
+			display none
+		+for_breakpoint(extraBigDesktop)
+			width: 40%
+		
+.decoration
+	position absolute
+	z-index: 100
+	+for_breakpoint(mobile)
+		display: none
+	&.pele
+		left: 0
+		top -40px
+	&.bat
+		bottom -40px
+		left 0
+		z-index: 10
+	&.patriots
+		right 0
+		top -20px
+	&.champions
+		left 0
+		top 115px
+	&.placa
+		right 0
+		top -40px
+	&.placa2
+		left 0
+		top -50px
+.prefooter
+	position: relative
+		
+.clear-30
+	height 30px
+	display: block
+.clear-40
+	height 40px
+	display: block
+.clear-70
+	height 70px
+	display: block
+	
+#modal-historia
+	.modal-dialog
+		.modal-content
+			position relative
+			background-color: #035b75
+			color #fff
+			.title-modal-historia
+				font-size 45px
+				font-weight 100
+				text-transform: uppercase
+				strong
+					font-weight 700
+			p
+				font-size 17px
+				font-weight 200
+				padding-right 30px
+				text-align justify
+			.modal-body
+				padding 50px 30px
+			.historia-imagen
+				margin -50px 0 -50px -30px
+				img
+					width: 100%
+					background-image url("../../images/src/historia.png")
+					background-size: cover
+					background-repeat: no-repeat
+					background-position-x: right
+			.close
+				position absolute
+				right: -24px
+				top -24px
+				color $azul
+				font-size 44px
+				font-weight 200
+				background-color: #FFF
+				opacity 1
+				line-height 33px
+				padding 11px 14px
+				border-radius 50%
+				
+				
+				

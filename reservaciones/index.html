@@ -1,0 +1,172 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>PHP-Conekta</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" href="bootstrap.min.css">		
+		<script type="text/javascript" src="https://conektaapi.s3.amazonaws.com/v0.2.0/js/conekta.js"></script>
+		<script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.min.js" ></script>
+		<script type="text/javascript" src="conekta-ajax.js"></script>
+		<script src="bootstrap.js"></script>
+		<style type="text/css">
+		h1{
+			font-size: 22px;
+		}
+
+		#donations{
+			overflow: hidden;
+		}
+
+		.column{
+			width: 30%;
+			float: left;
+		}
+		</style>
+	</head>
+	<body>
+										
+	<div id="donations" >
+		<!--Tarjeta -->		
+		<div class="column" id="card">
+			<h1>Tarjeta Credito/Debito</h1>
+			<form action="" method="POST" id="payment-form" > 
+				<p><input type="text" size="41" id="amount_card" placeholder="Monto" /></p>
+				<p><input type="text" size="41" length="100" id="name_card" placeholder="Nombre Completo del Tarjetahabiente" /></p>
+				<p><input type="email" name="email"></p>
+				<p><input type="text" size="41" length="20" id="number_card" placeholder="Numero de Tarjeta" /></p>
+				<p><input type="text" size="4" length="3" id="cvc_card" placeholder="CVC" /></p>
+				<p><input type="text" size="2" length="2" id="exp_month_card" placeholder="MM" />/<input type="text" size="4" length="2" id="exp_year_card" placeholder="YY" /></p>
+				<p><input type="button" id="submit" value="Completar Donativo" onclick="send_payment_card()"></p>
+			</form>
+		</div>		
+
+		<!-- OXXO -->		
+		<div class="column" id="oxxo">
+			<h1>OXXO</h1>
+			<form action="" method="POST" id="payment-form"> 
+				<p><input type="text" size="41" id="amount_oxxo" placeholder="Monto" /></p>
+				<p><input type="text" size="41" id="email_oxxo" placeholder="Email" /></p>
+				<p><input type="button" id="submit_oxxo" value="Generar Deposito" onclick="send_payment_oxxo()"></p>
+			</form>
+		</div>
+
+		<!--Banco-->			
+		<div class="column" id="bank">
+			<h1>Deposito Bancario</h1>
+			<form action="" method="POST" id="payment-form"> 
+				<p><input type="text" size="41" id="amount_bank" placeholder="Monto" /></p>
+				<p><input type="text" size="41" id="name_bank" placeholder="Nombre Completo" /></p>
+				<p><input type="text" size="41" id="email_bank" placeholder="Email" /></p>
+				<p><input type="text" size="41" length="10" id="phone_bank" placeholder="Telefono (Ej. 5555555555)" /></p>
+				<p><input type="text" size="41" id="bank_bank" readonly="readonly" value="Banorte" /></p>
+				<p><input type="button" id="submit" value="Generar Deposito" onclick="send_payment_bank()"></p>
+			</form>
+		</div>										
+	</div>
+	<div class="gap" style="height: 30px;"></div>
+	<div class="container">
+		<ul class="nav nav-tabs">
+		  <li role="presentation" class="active"><a href="#step-one" role="tab" data-toggle="tab">Datos de reserva</a></li>
+		  <li role="presentation"><a href="#step-two" role="tab" data-toggle="tab">Forma de Pago</a></li>
+		  <li role="presentation"><a href="#step-three" role="tab" data-toggle="tab">Resumen</a></li>
+		  <li role="presentation"><a href="#step-four" role="tab" data-toggle="tab">Finalizar Reserva</a></li>
+		</ul>
+		<form action="#">
+			<div class="steps tab-content">
+				<div class="step data tab-pane active" id="step-one">
+					<h4>Ingresa tus datos</h4>
+					<div class="input-group">
+						<label for="nombre" class="input-group-addon">Nombre Completo</label>
+						<input type="text" class="form-control">
+					</div>
+					<div class="input-group">
+						<label for="email" class="input-group-addon">Correo</label>
+						<input type="text" class="form-control">
+					</div>
+					<div class="input-group">
+						<label for="telefono" class="input-group-addon">Telefono</label>
+						<input type="text" class="form-control">
+					</div>
+					<div class="input-group">
+						<label for="adultos" class="input-group-addon">Adultos</label>
+						<input type="text" class="form-control">
+					</div>
+					<div class="input-group">
+						<label for="ninos" class="input-group-addon">Niños</label>
+						<input type="text" class="form-control">
+					</div>
+					<a href="#step-two" role="tab" data-toggle="tab">Siguiente</a>
+				</div>
+				<div class="step payment tab-pane" id="step-two">
+					<div class="metodo">
+						<div class="credit-card">
+							<p><input type="checkbox">Tarjeta de Credito y Debito</p>
+							<div class="info-card">
+								<div class="input-group">
+									<label for="nombre_tarjeta" class="input-group-addon">Nombre del titular</label>
+									<input type="text" class="form-control">
+								</div>
+								<div class="input-group">
+									<label for="numero_tarjeta" class="input-group-addon">Numero de tarjeta</label>
+									<input type="text" class="form-control">
+								</div>
+								<div class="input-group">
+									<input type="text" class="form-control"><label for="#" class="input-group-addon">/</label>
+									<input type="text" class="form-control ">
+								</div>
+								<div class="input-group">
+									<label for="#" class="input-group-addon">CVC</label>
+									<input type="text" class="form-control">
+								</div>
+
+							</div>
+						</div>
+						
+						<p><input type="checkbox">Transferencia en OXXO</p>
+
+						<a href="#">Siguiente</a>
+					</div>
+				</div>
+				<div class="step resume tab-pane" id="step-three">
+					<div class="data-reserva">
+						<p>Nombre: <span>Martin Alejandro Pat Uitzil</span></p>
+						<p>Telefono: <span>9981450850</span></p>
+						<p>Correo: <span>eagle9411@gmail.com</span></p>
+						<p>Adultos: <span>1 x $200</span></p>
+						<p>Niños: <span>2 x $100</span></p>
+
+					</div>
+					<div class="data-pay">
+						<p>Pago con: <span>Tarjeta</span></p>
+						<p>Cantidad: <span>$400</span></p>
+					</div>
+					<div class="terminos">
+						<p>¿Acepta terminos y condiciones? <input type="checkbox"></p>
+					</div>
+				</div>
+				<div class="step resume tab-pane" id="step-four">
+					hola3
+				</div>
+			</div>
+		</form>
+		
+
+
+
+	</div>								
+	<script>
+		$('#next-step-two').click(function (e) {
+			e.preventDefault();
+			console.log("clic");
+			$('#step-two').tab('show');
+		});
+
+		$('#myTabs a').click(function (e) {
+		  e.preventDefault()
+		  $(this).tab('show')
+		})
+	</script>
+	</body>
+</html>

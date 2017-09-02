@@ -1,0 +1,131 @@
+.nav-menu
+	position fixed
+	top 0
+	left 0
+	width 100%
+	display: block
+	padding 10px 20px
+	z-index: 1000
+	+for_breakpoint(mobile)
+		z-index 1001
+	&.nav-solid
+		background-color: $azul
+	img
+		width: 160px
+	button
+		float right
+		margin-top 20px
+		outline none !important
+		transition all 0.5s ease-in-out
+
+.social-link
+	position fixed
+	right 15px
+	top 50%
+	transform translateY(-50%)
+	z-index: 101
+	a
+		display block
+		margin-bottom 5px
+		img
+			width: 40px
+		
+body
+	position relative
+	&.sidenav-open
+		overflow-y auto
+		.sidenav
+			transform translateX(0)
+		.nav-menu
+			button
+				transform translateX(-480px)
+				transition all 0.5s ease-in-out
+				+for_breakpoint(mobile)
+					transform translateX(0)
+		.overlay-sidenav
+			display block
+			opacity 0.5
+	
+.sidenav
+	position fixed
+	top 0
+	right 0
+	background-color: $azul
+	height 100vh
+	width 504px
+	z-index: 1000
+	transform translateX(100%)
+	transition transform 0.5s ease-in-out
+	padding 40px 40px 
+	+for_breakpoint(mobile)
+		width: 100%
+		padding-top 100px
+	a
+		color #fff
+		font-size 15px
+		position relative
+		display: block
+		font-weight 500
+		line-height 15px
+		height 141px
+		width 141px
+		text-align: center
+		background-color rgba(255, 255, 255, .05)
+		border 1px solid rgba(255, 255, 255, .05)
+		+for_breakpoint(mobile)
+			width: 100%
+			height 112px
+			font-size 12px
+			
+		&:hover
+			background-color $amarillo
+			border-color #fff
+			span
+				color $azul
+		span
+			position absolute
+			top 50%
+			transform translateY(-50%)
+			display: block
+			width 100%
+		
+		
+	.row
+		.col-md-4
+			min-height 141px
+			padding 0 10px
+			position relative
+		.col-md-12
+			position relative
+			padding 0 10px
+			min-height 141px
+			+for_breakpoint(mobile)
+				padding: 0 2px
+			a
+				width: 100%
+				font-size 21px
+		.col-sm-6
+			+for_breakpoint(mobile)
+				padding 0 2px
+				height 112px
+				width: 32%
+				min-height 112px
+				display: inline-block
+			
+	
+.overlay-sidenav
+	position fixed
+	top 0
+	left 0
+	height 100vh
+	width 100%
+	z-index: 998
+	display none
+	background: $azul
+	opacity: 0
+	transition transform 0.5 ease-in-out
+	
+		
+.clear-15
+	height 15px
+	display: block

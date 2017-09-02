@@ -1,0 +1,108 @@
+.header-archive
+	border-bottom 9px solid $amarillo
+	position relative
+	.fondo-imagen
+		width 100%
+	.texto-header
+		position absolute
+		bottom 0
+		left 80px
+		font-size 105px
+		font-weight 400
+		color $amarillo
+		line-height 75px
+		+for_breakpoint(mobile)
+			font-size 40px
+			left 0
+		strong
+			font-weight 700
+	.header-decoration
+		position absolute
+		+for_breakpoint(mobile)
+			display none
+		&.copa
+			bottom 0
+			right 75px
+		&.vaso
+			bottom 0
+			right 0
+.body-archive
+	.dos-post,.tres-post
+		div
+			a
+				display block
+				position relative
+				+for_breakpoint(mobile)
+					margin-bottom 15px
+				.imagen
+					width 100%
+				.categoria-imagen
+					position absolute
+					top 6px
+					right 5px
+				h5
+					color #fff
+					position absolute
+					bottom 0
+					left 0
+					font-size 17px
+					font-weight 400
+					margin-left 25px
+					margin-left 25px
+				.gdrts-rating-block
+					margin 5px 0
+					.gdrts-rating-text
+						display none
+					.gdrts-rating-user
+						display none
+.menu-archive
+	ul
+		list-style none
+		width 65%
+		padding 0
+		margin 0 auto
+		li
+			list-style none
+			display inline-block
+			position relative
+			&.active
+				&:after
+					content ""
+					display block
+					width 0
+					height 0
+					border-top 12px solid $amarillo
+					border-right 12px solid transparent
+					border-left 12px solid transparent
+					position absolute
+					bottom 0
+					transform translate(-50%,100%)
+					left 50%
+					
+				a
+					background-color $amarillo
+					
+			a
+				color $azul
+				display block
+				padding 8px 5px 5px 5px
+				font-size 16px
+				text-transform uppercase
+				font-weight 300	
+				&:hover
+					background-color $amarillo
+					text-decoration none
+					
+	
+
+/*
+ beisbol
+ box
+ champions
+ laliga
+ ligamx
+ nba
+ nfl
+ otros
+ wwe
+*/

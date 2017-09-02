@@ -1,0 +1,23 @@
+<?php 
+require_once 'conekta.php';
+$amount 	= filter_input(INPUT_POST, 'amount');
+$amount 	= (strstr($amount = $amount, '.')) ? str_replace('.', '', $amount) : $amount.'00';
+$number 	= filter_input(INPUT_POST, 'number');
+$exp_month 	= filter_input(INPUT_POST, 'exp_month');
+$exp_year 	= filter_input(INPUT_POST, 'exp_year');
+$cvc 		= filter_input(INPUT_POST, 'cvc');
+$name 		= filter_input(INPUT_POST, 'name');
+$email 		= filter_input(INPUT_POST, 'email');
+$phone		= filter_input(INPUT_POST, 'telefono');
+$preciounitario = filter_input(INPUT_POST, 'preciounitario');
+$cantidad 		= filter_input(INPUT_POST, 'cantidad');
+$fecha 		= filter_input(INPUT_POST, 'fecha');
+$ninos		= filter_input(INPUT_POST, 'ninos');
+$brand		= filter_input(INPUT_POST, 'brand');
+$sucursal		= filter_input(INPUT_POST, 'sucursal');
+$hora		= filter_input(INPUT_POST, 'hora');
+$comentario		= filter_input(INPUT_POST, 'comentario');
+$token = filter_input(INPUT_POST, 'token');
+$nombre = filter_input(INPUT_POST, 'nombre');
+$evento = filter_input(INPUT_POST, 'evento');
+MyConekta::card($nombre,$token,$sucursal,$hora,$comentario,$brand,$fecha,$ninos,$amount, $number, $exp_month, $exp_year, $cvc, $name,$email,$phone,$preciounitario,$cantidad,$evento);

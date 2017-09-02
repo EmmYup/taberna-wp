@@ -1,0 +1,87 @@
+.promocion-dia
+	background-image: url("../images/src/promocion-fondo.png")
+	padding 40px 0
+	.promocion-text
+		text-transform uppercase
+		color $azul
+		font-size 50px
+		font-weight 300
+		line-height 40px
+		+for_breakpoint(mobile)
+			font-size 32px
+			text-align: center
+			line-height: 32px
+		.text-1
+			font-weight 700
+			font-size 59px
+			line-height: 45px
+			+for_breakpoint(mobile)
+				font-size 37px
+				line-height 37px
+		.text-2
+			font-weight 800
+			font-size 65px
+			line-height 55px
+			+for_breakpoint(mobile)
+				font-size 41px
+				line-height 41px
+				
+.modal-dia
+	&#lunes
+		.modal-dialog
+			.modal-content
+				background-image: url("../images/src/lunes.png")
+				background-size: cover
+				background-repeat: no-repeat
+	&#martes
+		.modal-dialog
+			.modal-content
+				background-image: url("../images/src/martes-fondo.png")
+				background-size: cover
+				background-repeat: no-repeat
+	&#miercoles
+		.modal-dialog
+			.modal-content
+				background-image: url("../images/src/miercoles.png")
+				background-size: cover
+				background-repeat: no-repeat
+	&#jueves
+		.modal-dialog
+			.modal-content
+				background-image: url("../images/src/jueves.png")
+				background-size: cover
+				background-repeat: no-repeat
+	&#domingo
+		.modal-dialog
+			.modal-content
+				background-image: url("../images/src/domingo.png")
+				background-size: cover
+				background-repeat: no-repeat
+	.modal-dialog
+		.modal-content
+			position relative
+			.modal-body
+				height 650px
+				+for_breakpoint(mobile)
+					height 380px
+				.close
+					position absolute
+					right: -24px
+					top -24px
+					color $azul
+					font-size 44px
+					font-weight 200
+					background-color: #FFF
+					opacity 1
+					line-height 33px
+					padding 11px 14px
+					border-radius 50%
+				img
+					height 100%
+					display block
+					margin 0 auto
+					+for_breakpoint(mobile)
+						height auto
+						width: 100%
+						 
+					

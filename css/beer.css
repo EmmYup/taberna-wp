@@ -1,0 +1,567 @@
+@-moz-keyframes serveja {
+  to {
+    background-position: 1051px 0;
+  }
+}
+@-webkit-keyframes serveja {
+  to {
+    background-position: 1051px 0;
+  }
+}
+@keyframes serveja {
+  to {
+    background-position: 1051px 0;
+  }
+}
+#preloader .logo-pre{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+#beer2 {
+  height: 100vh;
+  background-color: #fff;
+  font-weight: 900;
+  position: relative;
+}
+#beer2 > div {
+  border-radius: 50%;
+  width: 140px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  background-image: url('../images/src/zQjJ7lI.png');
+  background-repeat: repeat-x;
+  background-position-y: 10px;
+  background-color: #F7BD01;
+  -webkit-animation: serveja 10s linear infinite;
+  -moz-animation: serveja 10s linear infinite;
+  animation: serveja 10s linear infinite;
+  -ms-animation: serveja 10s linear infinite;
+}
+#beer2 > div > div {
+    position: relative;
+    z-index: 400000;
+    width: 100%;
+    padding-bottom: 100%;
+    background-image: url("../images/src/load-beer.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#beer2 > div .bolha {
+  border-radius: 100%;
+  display: block;
+  z-index: 2;
+}
+#beer2 > div .bolha:nth-child(40) {
+  background-color: rgba(255, 255, 255, 0.56618752);
+  width: 2.47256362px;
+  height: 2.47256362px;
+  position: absolute;
+  left: 45.97806957%;
+  bottom: 0;
+  -webkit-animation: bolha 1.00002948s infinite linear;
+  -moz-animation: bolha 1.00002948s infinite linear;
+  animation: bolha 1.00002948s infinite linear;
+  -ms-animation: bolha 1.00002948s infinite linear;
+}
+#beer2 > div .bolha:nth-child(39) {
+  background-color: rgba(255, 255, 255, 0.83668401);
+  width: 4.17671385px;
+  height: 4.17671385px;
+  position: absolute;
+  left: 22.07661784%;
+  bottom: 0;
+  -webkit-animation: bolha 1.37328071s infinite linear;
+  -moz-animation: bolha 1.37328071s infinite linear;
+  animation: bolha 1.37328071s infinite linear;
+  -ms-animation: bolha 1.37328071s infinite linear;
+}
+#beer2 > div .bolha:nth-child(38) {
+  background-color: rgba(255, 255, 255, 0.68650431);
+  width: 4.81128945px;
+  height: 4.81128945px;
+  position: absolute;
+  left: 28.34054453%;
+  bottom: 0;
+  -webkit-animation: bolha 1.09103719s infinite linear;
+  -moz-animation: bolha 1.09103719s infinite linear;
+  animation: bolha 1.09103719s infinite linear;
+  -ms-animation: bolha 1.09103719s infinite linear;
+}
+#beer2 > div .bolha:nth-child(37) {
+  background-color: rgba(255, 255, 255, 0.66712938);
+  width: 4.11599786px;
+  height: 4.11599786px;
+  position: absolute;
+  left: 51.8460867%;
+  bottom: 0;
+  -webkit-animation: bolha 1.60405113s infinite linear;
+  -moz-animation: bolha 1.60405113s infinite linear;
+  animation: bolha 1.60405113s infinite linear;
+  -ms-animation: bolha 1.60405113s infinite linear;
+}
+#beer2 > div .bolha:nth-child(36) {
+  background-color: rgba(255, 255, 255, 0.35462159);
+  width: 4.36472294px;
+  height: 4.36472294px;
+  position: absolute;
+  left: 42.81912623%;
+  bottom: 0;
+  -webkit-animation: bolha 1.67954382s infinite linear;
+  -moz-animation: bolha 1.67954382s infinite linear;
+  animation: bolha 1.67954382s infinite linear;
+  -ms-animation: bolha 1.67954382s infinite linear;
+}
+#beer2 > div .bolha:nth-child(35) {
+  background-color: rgba(255, 255, 255, 0.40363041);
+  width: 5.82849505px;
+  height: 5.82849505px;
+  position: absolute;
+  left: 58.67992386%;
+  bottom: 0;
+  -webkit-animation: bolha 1.07539874s infinite linear;
+  -moz-animation: bolha 1.07539874s infinite linear;
+  animation: bolha 1.07539874s infinite linear;
+  -ms-animation: bolha 1.07539874s infinite linear;
+}
+#beer2 > div .bolha:nth-child(34) {
+  background-color: rgba(255, 255, 255, 0.51020702);
+  width: 3.33164085px;
+  height: 3.33164085px;
+  position: absolute;
+  left: 20.57457466%;
+  bottom: 0;
+  -webkit-animation: bolha 1.19959829s infinite linear;
+  -moz-animation: bolha 1.19959829s infinite linear;
+  animation: bolha 1.19959829s infinite linear;
+  -ms-animation: bolha 1.19959829s infinite linear;
+}
+#beer2 > div .bolha:nth-child(33) {
+  background-color: rgba(255, 255, 255, 0.63981689);
+  width: 3.29111085px;
+  height: 3.29111085px;
+  position: absolute;
+  left: 20.23555287%;
+  bottom: 0;
+  -webkit-animation: bolha 1.4485246s infinite linear;
+  -moz-animation: bolha 1.4485246s infinite linear;
+  animation: bolha 1.4485246s infinite linear;
+  -ms-animation: bolha 1.4485246s infinite linear;
+}
+#beer2 > div .bolha:nth-child(32) {
+  background-color: rgba(255, 255, 255, 0.88173384);
+  width: 4.53248922px;
+  height: 4.53248922px;
+  position: absolute;
+  left: 27.13302208%;
+  bottom: 0;
+  -webkit-animation: bolha 1.21085033s infinite linear;
+  -moz-animation: bolha 1.21085033s infinite linear;
+  animation: bolha 1.21085033s infinite linear;
+  -ms-animation: bolha 1.21085033s infinite linear;
+}
+#beer2 > div .bolha:nth-child(31) {
+  background-color: rgba(255, 255, 255, 0.7243851);
+  width: 4.78689716px;
+  height: 4.78689716px;
+  position: absolute;
+  left: 25.14310015%;
+  bottom: 0;
+  -webkit-animation: bolha 1.78303288s infinite linear;
+  -moz-animation: bolha 1.78303288s infinite linear;
+  animation: bolha 1.78303288s infinite linear;
+  -ms-animation: bolha 1.78303288s infinite linear;
+}
+#beer2 > div .bolha:nth-child(30) {
+  background-color: rgba(255, 255, 255, 0.21395385);
+  width: 5.69910238px;
+  height: 5.69910238px;
+  position: absolute;
+  left: 35.32382726%;
+  bottom: 0;
+  -webkit-animation: bolha 1.62242644s infinite linear;
+  -moz-animation: bolha 1.62242644s infinite linear;
+  animation: bolha 1.62242644s infinite linear;
+  -ms-animation: bolha 1.62242644s infinite linear;
+}
+#beer2 > div .bolha:nth-child(29) {
+  background-color: rgba(255, 255, 255, 0.39745346);
+  width: 3.0661148px;
+  height: 3.0661148px;
+  position: absolute;
+  left: 55.36948296%;
+  bottom: 0;
+  -webkit-animation: bolha 1.44985157s infinite linear;
+  -moz-animation: bolha 1.44985157s infinite linear;
+  animation: bolha 1.44985157s infinite linear;
+  -ms-animation: bolha 1.44985157s infinite linear;
+}
+#beer2 > div .bolha:nth-child(28) {
+  background-color: rgba(255, 255, 255, 0.80722533);
+  width: 2.41745788px;
+  height: 2.41745788px;
+  position: absolute;
+  left: 19.29382323%;
+  bottom: 0;
+  -webkit-animation: bolha 1.55583263s infinite linear;
+  -moz-animation: bolha 1.55583263s infinite linear;
+  animation: bolha 1.55583263s infinite linear;
+  -ms-animation: bolha 1.55583263s infinite linear;
+}
+#beer2 > div .bolha:nth-child(27) {
+  background-color: rgba(255, 255, 255, 0.86084641);
+  width: 4.15425375px;
+  height: 4.15425375px;
+  position: absolute;
+  left: 38.25359743%;
+  bottom: 0;
+  -webkit-animation: bolha 1.18715165s infinite linear;
+  -moz-animation: bolha 1.18715165s infinite linear;
+  animation: bolha 1.18715165s infinite linear;
+  -ms-animation: bolha 1.18715165s infinite linear;
+}
+#beer2 > div .bolha:nth-child(26) {
+  background-color: rgba(255, 255, 255, 0.48242199);
+  width: 3.81395804px;
+  height: 3.81395804px;
+  position: absolute;
+  left: 55.59658428%;
+  bottom: 0;
+  -webkit-animation: bolha 1.22666235s infinite linear;
+  -moz-animation: bolha 1.22666235s infinite linear;
+  animation: bolha 1.22666235s infinite linear;
+  -ms-animation: bolha 1.22666235s infinite linear;
+}
+#beer2 > div .bolha:nth-child(25) {
+  background-color: rgba(255, 255, 255, 0.80669824);
+  width: 2.80241194px;
+  height: 2.80241194px;
+  position: absolute;
+  left: 28.88335741%;
+  bottom: 0;
+  -webkit-animation: bolha 1.73455455s infinite linear;
+  -moz-animation: bolha 1.73455455s infinite linear;
+  animation: bolha 1.73455455s infinite linear;
+  -ms-animation: bolha 1.73455455s infinite linear;
+}
+#beer2 > div .bolha:nth-child(24) {
+  background-color: rgba(255, 255, 255, 0.73226219);
+  width: 2.19057071px;
+  height: 2.19057071px;
+  position: absolute;
+  left: 43.23511227%;
+  bottom: 0;
+  -webkit-animation: bolha 1.74497088s infinite linear;
+  -moz-animation: bolha 1.74497088s infinite linear;
+  animation: bolha 1.74497088s infinite linear;
+  -ms-animation: bolha 1.74497088s infinite linear;
+}
+#beer2 > div .bolha:nth-child(23) {
+  background-color: rgba(255, 255, 255, 0.66257463);
+  width: 3.03076034px;
+  height: 3.03076034px;
+  position: absolute;
+  left: 18.27519077%;
+  bottom: 0;
+  -webkit-animation: bolha 1.04550851s infinite linear;
+  -moz-animation: bolha 1.04550851s infinite linear;
+  animation: bolha 1.04550851s infinite linear;
+  -ms-animation: bolha 1.04550851s infinite linear;
+}
+#beer2 > div .bolha:nth-child(22) {
+  background-color: rgba(255, 255, 255, 0.64368642);
+  width: 2.91811779px;
+  height: 2.91811779px;
+  position: absolute;
+  left: 27.44210273%;
+  bottom: 0;
+  -webkit-animation: bolha 1.33858451s infinite linear;
+  -moz-animation: bolha 1.33858451s infinite linear;
+  animation: bolha 1.33858451s infinite linear;
+  -ms-animation: bolha 1.33858451s infinite linear;
+}
+#beer2 > div .bolha:nth-child(21) {
+  background-color: rgba(255, 255, 255, 0.79965518);
+  width: 2.16749829px;
+  height: 2.16749829px;
+  position: absolute;
+  left: 31.304449%;
+  bottom: 0;
+  -webkit-animation: bolha 1.15400502s infinite linear;
+  -moz-animation: bolha 1.15400502s infinite linear;
+  animation: bolha 1.15400502s infinite linear;
+  -ms-animation: bolha 1.15400502s infinite linear;
+}
+#beer2 > div .bolha:nth-child(20) {
+  background-color: rgba(255, 255, 255, 0.24261487);
+  width: 2.35699888px;
+  height: 2.35699888px;
+  position: absolute;
+  left: 27.90057196%;
+  bottom: 0;
+  -webkit-animation: bolha 1.1819717s infinite linear;
+  -moz-animation: bolha 1.1819717s infinite linear;
+  animation: bolha 1.1819717s infinite linear;
+  -ms-animation: bolha 1.1819717s infinite linear;
+}
+#beer2 > div .bolha:nth-child(19) {
+  background-color: rgba(255, 255, 255, 0.45713274);
+  width: 5.46202016px;
+  height: 5.46202016px;
+  position: absolute;
+  left: 19.40536158%;
+  bottom: 0;
+  -webkit-animation: bolha 1.71141329s infinite linear;
+  -moz-animation: bolha 1.71141329s infinite linear;
+  animation: bolha 1.71141329s infinite linear;
+  -ms-animation: bolha 1.71141329s infinite linear;
+}
+#beer2 > div .bolha:nth-child(18) {
+  background-color: rgba(255, 255, 255, 0.14413786);
+  width: 3.68549461px;
+  height: 3.68549461px;
+  position: absolute;
+  left: 44.32437967%;
+  bottom: 0;
+  -webkit-animation: bolha 1.27519514s infinite linear;
+  -moz-animation: bolha 1.27519514s infinite linear;
+  animation: bolha 1.27519514s infinite linear;
+  -ms-animation: bolha 1.27519514s infinite linear;
+}
+#beer2 > div .bolha:nth-child(17) {
+  background-color: rgba(255, 255, 255, 0.80395062);
+  width: 3.68956916px;
+  height: 3.68956916px;
+  position: absolute;
+  left: 28.98524372%;
+  bottom: 0;
+  -webkit-animation: bolha 1.45407787s infinite linear;
+  -moz-animation: bolha 1.45407787s infinite linear;
+  animation: bolha 1.45407787s infinite linear;
+  -ms-animation: bolha 1.45407787s infinite linear;
+}
+#beer2 > div .bolha:nth-child(16) {
+  background-color: rgba(255, 255, 255, 0.37348187);
+  width: 5.28186467px;
+  height: 5.28186467px;
+  position: absolute;
+  left: 36.11847544%;
+  bottom: 0;
+  -webkit-animation: bolha 1.05170652s infinite linear;
+  -moz-animation: bolha 1.05170652s infinite linear;
+  animation: bolha 1.05170652s infinite linear;
+  -ms-animation: bolha 1.05170652s infinite linear;
+}
+#beer2 > div .bolha:nth-child(15) {
+  background-color: rgba(255, 255, 255, 0.7987116);
+  width: 4.46305707px;
+  height: 4.46305707px;
+  position: absolute;
+  left: 24.19630833%;
+  bottom: 0;
+  -webkit-animation: bolha 1.18989614s infinite linear;
+  -moz-animation: bolha 1.18989614s infinite linear;
+  animation: bolha 1.18989614s infinite linear;
+  -ms-animation: bolha 1.18989614s infinite linear;
+}
+#beer2 > div .bolha:nth-child(14) {
+  background-color: rgba(255, 255, 255, 0.10900282);
+  width: 5.8476984px;
+  height: 5.8476984px;
+  position: absolute;
+  left: 55.39382028%;
+  bottom: 0;
+  -webkit-animation: bolha 1.42333101s infinite linear;
+  -moz-animation: bolha 1.42333101s infinite linear;
+  animation: bolha 1.42333101s infinite linear;
+  -ms-animation: bolha 1.42333101s infinite linear;
+}
+#beer2 > div .bolha:nth-child(13) {
+  background-color: rgba(255, 255, 255, 0.36196613);
+  width: 2.61722602px;
+  height: 2.61722602px;
+  position: absolute;
+  left: 19.65151834%;
+  bottom: 0;
+  -webkit-animation: bolha 1.15895435s infinite linear;
+  -moz-animation: bolha 1.15895435s infinite linear;
+  animation: bolha 1.15895435s infinite linear;
+  -ms-animation: bolha 1.15895435s infinite linear;
+}
+#beer2 > div .bolha:nth-child(12) {
+  background-color: rgba(255, 255, 255, 0.19228069);
+  width: 2.69869343px;
+  height: 2.69869343px;
+  position: absolute;
+  left: 45.84339535%;
+  bottom: 0;
+  -webkit-animation: bolha 1.21498916s infinite linear;
+  -moz-animation: bolha 1.21498916s infinite linear;
+  animation: bolha 1.21498916s infinite linear;
+  -ms-animation: bolha 1.21498916s infinite linear;
+}
+#beer2 > div .bolha:nth-child(11) {
+  background-color: rgba(255, 255, 255, 0.38561185);
+  width: 2.1578652px;
+  height: 2.1578652px;
+  position: absolute;
+  left: 18.734175%;
+  bottom: 0;
+  -webkit-animation: bolha 1.38644528s infinite linear;
+  -moz-animation: bolha 1.38644528s infinite linear;
+  animation: bolha 1.38644528s infinite linear;
+  -ms-animation: bolha 1.38644528s infinite linear;
+}
+#beer2 > div .bolha:nth-child(10) {
+  background-color: rgba(255, 255, 255, 0.5296788);
+  width: 3.53026337px;
+  height: 3.53026337px;
+  position: absolute;
+  left: 17.8915818%;
+  bottom: 0;
+  -webkit-animation: bolha 1.5638816s infinite linear;
+  -moz-animation: bolha 1.5638816s infinite linear;
+  animation: bolha 1.5638816s infinite linear;
+  -ms-animation: bolha 1.5638816s infinite linear;
+}
+#beer2 > div .bolha:nth-child(9) {
+  background-color: rgba(255, 255, 255, 0.41441217);
+  width: 4.73948132px;
+  height: 4.73948132px;
+  position: absolute;
+  left: 56.70405491%;
+  bottom: 0;
+  -webkit-animation: bolha 1.14785664s infinite linear;
+  -moz-animation: bolha 1.14785664s infinite linear;
+  animation: bolha 1.14785664s infinite linear;
+  -ms-animation: bolha 1.14785664s infinite linear;
+}
+#beer2 > div .bolha:nth-child(8) {
+  background-color: rgba(255, 255, 255, 0.35694768);
+  width: 4.54548288px;
+  height: 4.54548288px;
+  position: absolute;
+  left: 23.144178%;
+  bottom: 0;
+  -webkit-animation: bolha 1.61538349s infinite linear;
+  -moz-animation: bolha 1.61538349s infinite linear;
+  animation: bolha 1.61538349s infinite linear;
+  -ms-animation: bolha 1.61538349s infinite linear;
+}
+#beer2 > div .bolha:nth-child(7) {
+  background-color: rgba(255, 255, 255, 0.15010155);
+  width: 5.26921621px;
+  height: 5.26921621px;
+  position: absolute;
+  left: 21.20991403%;
+  bottom: 0;
+  -webkit-animation: bolha 1.01451414s infinite linear;
+  -moz-animation: bolha 1.01451414s infinite linear;
+  animation: bolha 1.01451414s infinite linear;
+  -ms-animation: bolha 1.01451414s infinite linear;
+}
+#beer2 > div .bolha:nth-child(6) {
+  background-color: rgba(255, 255, 255, 0.14559729);
+  width: 3.77332721px;
+  height: 3.77332721px;
+  position: absolute;
+  left: 46.46896721%;
+  bottom: 0;
+  -webkit-animation: bolha 1.38527051s infinite linear;
+  -moz-animation: bolha 1.38527051s infinite linear;
+  animation: bolha 1.38527051s infinite linear;
+  -ms-animation: bolha 1.38527051s infinite linear;
+}
+#beer2 > div .bolha:nth-child(5) {
+  background-color: rgba(255, 255, 255, 0.62482559);
+  width: 4.64494371px;
+  height: 4.64494371px;
+  position: absolute;
+  left: 30.38378609%;
+  bottom: 0;
+  -webkit-animation: bolha 1.70254981s infinite linear;
+  -moz-animation: bolha 1.70254981s infinite linear;
+  animation: bolha 1.70254981s infinite linear;
+  -ms-animation: bolha 1.70254981s infinite linear;
+}
+#beer2 > div .bolha:nth-child(4) {
+  background-color: rgba(255, 255, 255, 0.59200678);
+  width: 4.15847028px;
+  height: 4.15847028px;
+  position: absolute;
+  left: 45.50203369%;
+  bottom: 0;
+  -webkit-animation: bolha 1.34385574s infinite linear;
+  -moz-animation: bolha 1.34385574s infinite linear;
+  animation: bolha 1.34385574s infinite linear;
+  -ms-animation: bolha 1.34385574s infinite linear;
+}
+#beer2 > div .bolha:nth-child(3) {
+  background-color: rgba(255, 255, 255, 0.48397319);
+  width: 2.90189526px;
+  height: 2.90189526px;
+  position: absolute;
+  left: 52.18465059%;
+  bottom: 0;
+  -webkit-animation: bolha 1.16241532s infinite linear;
+  -moz-animation: bolha 1.16241532s infinite linear;
+  animation: bolha 1.16241532s infinite linear;
+  -ms-animation: bolha 1.16241532s infinite linear;
+}
+#beer2 > div .bolha:nth-child(2) {
+  background-color: rgba(255, 255, 255, 0.28629607);
+  width: 4.07911464px;
+  height: 4.07911464px;
+  position: absolute;
+  left: 46.97254813%;
+  bottom: 0;
+  -webkit-animation: bolha 1.45946212s infinite linear;
+  -moz-animation: bolha 1.45946212s infinite linear;
+  animation: bolha 1.45946212s infinite linear;
+  -ms-animation: bolha 1.45946212s infinite linear;
+}
+#beer2 > div .bolha:nth-child(1) {
+  background-color: rgba(255, 255, 255, 0.55502001);
+  width: 3.48372788px;
+  height: 3.48372788px;
+  position: absolute;
+  left: 26.96157692%;
+  bottom: 0;
+  -webkit-animation: bolha 1.79124053s infinite linear;
+  -moz-animation: bolha 1.79124053s infinite linear;
+  animation: bolha 1.79124053s infinite linear;
+  -ms-animation: bolha 1.79124053s infinite linear;
+}
+@-moz-keyframes bolha {
+  to {
+    bottom: 100%;
+    opacity: 0;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+  }
+}
+@-webkit-keyframes bolha {
+  to {
+    bottom: 100%;
+    opacity: 0;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+  }
+}
+@keyframes bolha {
+  to {
+    bottom: 100%;
+    opacity: 0;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+  }
+}

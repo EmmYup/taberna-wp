@@ -1,0 +1,107 @@
+.ms-slide
+	img
+		width: 400px
+		left: 0
+	.ms-caption
+		z-index: 100
+		color white
+		font-size 23px
+		width: 500px
+		font-weight 200
+	.ms-layer
+		left 150px
+	.link-reserva
+		font-size 24px
+		color $azul
+		padding 15px 35px
+		background-color: #FFF
+		border-radius 2px
+		line-height 22px !important
+.ms-thumb-frame
+	h3
+		font-weight: 700 !important
+		font-size 23px !important
+	p
+		font-weight: 200 !important
+		font-size 19px !important
+
+.carousel-promo
+	.item-promo
+		display inline-block
+		+for_breakpoint(mobile)
+			width 50%
+			display: block
+			margin 0 auto
+		&.dia-select
+			img
+				filter none
+		img
+			filter opacity(50%) brightness(120%)
+		
+		
+.owl-nav
+	.owl-next
+		content ""
+		position absolute
+		width 0
+		height 0
+		right: -20px
+		top 50%
+		transform translateY(-50%)
+		color transparent
+		border-left 8px solid $azul
+		border-top 10px solid transparent
+		border-bottom 10px solid transparent
+		+for_breakpoint(mobile)
+			right 0
+	.owl-prev
+		content ""
+		position: absolute
+		width 0
+		height 0
+		left -20px
+		top 50%
+		transform translateY(-50%)
+		border-right 8px solid $azul
+		border-top 10px solid transparent
+		border-bottom 10px solid transparent
+		color: transparent
+		+for_breakpoint(mobile)
+			left 0
+		
+.ms-tabs-template
+	.transmisiones
+		position absolute
+		bottom 0
+		right 250px
+		z-index: 100
+		padding 8px 20px 2px 20px
+		background-color $amarillo
+		border-radius 10px 10px 0 0 
+		+for_breakpoint(mobile)
+			display none
+		.text-transmisiones
+			display inline-block
+			color #fff
+			font-size 14px
+			font-weight 700
+			line-height 15px
+			text-transform: uppercase
+		img
+			position: relative
+			bottom 8px
+			margin-right 5px
+			
+			
+
+		
+#preloader
+	background #fff url("../../images/src/loader.gif") no-repeat center center
+	position fixed
+	left 0
+	top 0
+	z-index 10000
+	width 100%
+	height 100%
+	overflow visible
+

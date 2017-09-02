@@ -1,0 +1,77 @@
+.menu-section
+	&.active
+		background-image: url("../../images/src/fondoazul.jpg");
+		transition all 0.5s
+		.menu-body
+			height 800px
+			overflow hidden
+			transition all 0.5 ease-in-out
+		.menu-header
+			background-image: none
+	.menu-body
+		height 0
+		transition all 0.5s ease-in-out
+		overflow hidden
+		.platillo
+			color #fff
+			margin-bottom 50px
+			text-align justify
+			position relative
+			&.picante
+				.title-platillo
+					position relative
+					&:before
+						content ""
+						width 45px
+						height 42px
+						display: block
+						position absolute
+						background-image: url("../../images/src/picante-blanco.png")
+						background-repeat: no-repeat
+						background-size: 80%
+						top -5px
+						left -40px
+				
+			.title-platillo
+				font-size 26px
+				font-weight 500
+				line-height 21px
+			p
+				font-size 19px
+				font-weight 300
+				line-height 19px
+		.primero
+			.platillo
+				padding-left 148px
+		.segundo
+			.platillo
+				padding-right 90px
+				padding-left 50px
+.menu-header
+	background-image: url("../../images/src/fondoazul.jpg")
+	background-size: cover
+	backround-repeat no-repeat
+	padding 95px 0
+	position relative
+	transition all 0.5
+	.menu-text
+		font-size 57px
+		font-weight 100
+		text-align: center
+		line-height 48px
+		color #fff
+		&:hover
+			cursor pointer
+		strong
+			font-weight 700
+			&:after
+				content ""
+				height 0
+				width 0
+				display inline-block
+				border-top 12px solid $amarillo
+				border-right 16px solid transparent
+				border-left 16px solid transparent
+				transform translateY(-50%)
+				left 15px
+				position: relative

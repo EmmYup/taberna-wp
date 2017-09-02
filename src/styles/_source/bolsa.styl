@@ -1,0 +1,100 @@
+.bolsa-trabajo
+	padding 30px 0
+	background-color $amarillo
+	position relative
+	min-height 523px
+	.title-bolsa
+		font-size 69px
+		font-weight 100
+		color $azul
+		text-transform: uppercase
+		line-height 58px
+		+for_breakpoint(mobile)
+			font-size 39px
+			text-align: center
+			line-height 39px
+	p
+		font-size 19px
+		font-weight 500
+		color $azul
+		line-height 22px
+	a
+		display block
+		margin 0 auto
+		background-color $azul
+		color #fff
+		padding 20px 40px
+		font-size 27px
+		line-height 27px
+		width 452px
+		border-radius 10px
+		+for_breakpoint(mobile)
+			width 100%
+			font-size 22px
+		&:hover
+			text-decoration: none
+	.rate-social
+		+for_breakpoint(mobile)
+			margin 10px 0
+		a
+			&:hover
+				text-decoration none
+		.facebook
+			display inline-block
+			width: 180px
+			background-color #688cff
+			padding 12px 4px
+			font-size 33px
+			font-weight 700
+			border-radius 10px
+			margin-right 17px
+			margin-left 7px
+			+for_breakpoint(mobile)
+				margin-right 7px
+				margin-left 3px
+		.tripadvisor
+			display inline-block
+			width 180px
+			background-color #6c9345
+			padding 12px 4px
+			font-size 33px
+			font-weight 700
+			border-radius 10px
+		i
+			font-size 37px
+			font-weight 400
+			margin-left 30px
+			&.fa-star
+				font-size 21px
+				margin-left 5px
+			
+		span
+			border-left 1px solid #fff
+			padding-left 10px
+	.step-bolsa
+		width 143px
+		height 143px
+		margin 0 auto
+		position relative
+		border-radius 50%
+		transition all 0.3s ease-in-out
+		&:hover
+			background-color $azul
+			cursor pointer
+			img
+				filter grayscale(1) brightness(10)
+		img
+			position absolute
+			right 50%
+			top 50%
+			transform translateY(-50%) translateX(50%)
+	.diagonal
+		width: 100%
+		background-color $amarillo
+		position absolute
+		bottom -16px
+		height 40px
+		transform rotate(-2deg) skewX(-2deg)
+		z-index: 99
+			
+			
